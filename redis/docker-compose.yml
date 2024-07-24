@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  redis:
+    image: redis/redis-stack-server:latest
+    environment:
+      REDIS_ARGS: "--requirepass RadISC0nnect"
+    # env_file:
+    #   - redis.env
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis:/data
+
+volumes:
+  redis:
