@@ -1,1 +1,3 @@
 # docker-services
+ - rabbitmq
+ - opensearch
